@@ -9,7 +9,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #8e1543;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -17,11 +17,50 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.square {
+  border: 2px solid rgb(255, 255, 255);
+  width:100px;
+  height: 105px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8e1543;
+}
+
+.square2 {
+  border: 2px solid rgb(255, 255, 255);
+  width: 100px;
+  height: 105px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.winning-square {
+  border: 2px solid rgb(195, 249, 0);
+  width: 115px;
+  height: 120px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75px;
+}
+
 
 @keyframes App-logo-spin {
   from {

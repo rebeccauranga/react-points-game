@@ -1,49 +1,37 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Widget from './Widget'
+import Card1 from './Card1'
+import Card2 from './Card2'
+import Restart from './Restart';
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      shouldShowWidget: true, 
-      widgetState: 0
+      turn: '',
+      class: 'square'
     };
   }
 
   render() {
     return (
-      <div className="App">
-      {/* no anon function, since no custom args passed to _toggleShowWidget */}
-      <button onClick={this._toggleShowWidget}>flip it</button>
-      { this.state.shouldShowWidget 
-        ? <Widget 
-          saveState={this._saveWidgetState}
-          startingValue={this.state.widgetState}
-        /> 
-        : 'now you dont' 
-      }
+      <div className="App-header">
+      <h2>First to 20 points wins!</h2>
+      {this.state.turn}
+        <Card1 />
+        <Card2 />
+  
       </div>
+
     );
   }
 
-  
-  _toggleShowWidget = () => {
+  _restart = () => {
     this.setState({
-      shouldShowWidget: !this.state.shouldShowWidget
-    });
+      turn: 'Next player'
+    })
   }
-
-  _saveWidgetState = (widgetState) => {
-    this.setState({
-      widgetState
-    });
-  }
-
-
-
 }
 
 
