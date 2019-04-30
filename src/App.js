@@ -19,8 +19,9 @@ class App extends React.Component {
       <div className="App-header">
       <h2>First to 20 points wins!</h2>
       {this.state.turn}
-        <Card1 />
-        <Card2 />
+        <Card1 playerNumber={'1'}/>
+        <Card1 playerNumber={'2'}/>
+        {/* <Card2 /> */}
   
       </div>
 

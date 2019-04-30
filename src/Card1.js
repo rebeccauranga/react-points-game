@@ -34,7 +34,7 @@ class Card1 extends React.Component {
             <Confetti active= {this.state.completed} />
             <Confetti active= {this.state.completed} />
 
-                <p>Player 1</p>
+                <p>Player {this.props.playerNumber}</p>
                 {this.state.randomNumber}
                 {this.state.random}
                 <button disabled={this.state.winner} onClick={this._generateRandomNumber}>Click Me</button>

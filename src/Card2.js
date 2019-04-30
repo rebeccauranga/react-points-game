@@ -1,5 +1,6 @@
 import React from 'react';
 import Confetti from 'react-dom-confetti';
+import Card1 from './Card1'
 
 class Card2 extends React.Component {
 
@@ -37,14 +38,6 @@ class Card2 extends React.Component {
         );
     }
 
-    _generateRandomNumber = () => {
-        let min = -2;
-        let max = 6;
-        let rand = min + (Math.random() * (max-min));
-        this.setState({
-          randomNumber: this.state.randomNumber + Math.round(rand)
-        });
-      }
 
 }
 
